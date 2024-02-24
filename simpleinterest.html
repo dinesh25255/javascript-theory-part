@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple interest</title>
+</head>
+<body>
+    <script>
+        let P = prompt("Enter the principle")
+        let T = prompt("Enter the time in year")
+        let R = prompt("Enter the  time in %")
+
+        let SI = P*T*R/100
+        let amount= +P+SI
+
+        // document.write("The simple interest is"+ SI + ""+ "and total amount is"+ amount +""+ "when principle is"+T + "year and rate of interest is"+R+"%.")
+
+
+        document.write(`The simple interest is ${SI}and total amount is ${amount}, when the principle is ${P} time in year is ${T}year and rate of interest is ${R}%.`)
+
+        // when we try to takes any inputs from input field at a  time string data type will be stored
+    </script>
+    
+</body>
+</html>
