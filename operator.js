@@ -103,10 +103,33 @@
 //equal to (strict) (====)
 
 //3. logical operator
+// AND operator// or operator// NOT operator // special operator
+
+
+
+
 
 
 //4. special operator
 //5. Assignment operator
+
+// this operator assign the value  to the variable .
+// ==(assignment operator )
+let x= 10// here , 10 is assigned to variable named as x
+
+// += (addition assignment )
+x+3// x+3
+
+// (substraction  assignment )
+x-=4//x=x-4
+
+// / =(division  assignment)
+x/=3// 
+
+//(multiplication)
+// (modole assignment)
+// (exponential assignment)
+
 
 
 

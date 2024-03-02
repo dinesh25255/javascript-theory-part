@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date method</title>
+</head>
+<body>
+
+    <script>
+
+        // javascript has inbuild date object and it  has it  own usefull method
+
+        const date = newdate()
+        console.log(date)
+
+        // to get full year 
+
+        document.write(`${date.getfullyyear()} <br>`)
+
+        // to get month(0-11)
+
+        document.write(`${date.getmonth +1()} <br>`)
+
+        // to get date
+        document.write(`${date.getdate()} <br>`)
+
+
+        // to get weekday 
+
+        document.write(`${date.getday()+1}`)
+
+
+
+
+        // timimg events in javascript 
+
+        console.log(`coundown 1 started`)
+
+        setTimeout(()=> console.log(`countdown 2 started`), 5000)
+        console.log(`coundown 4 started`)
+
+
+        //set interval
+
+        // setinterval(()=> console.log("hello world"),5000)
+
+        // function clock() {
+        //     const now= newdate()
+        //     const hours = now.gethours()
+        //     const minutes = now.getminutes()
+        //     const seconds =now.getminutes()
+
+        //     displaysection.innerText=`${hour 12 format}: ${minutes}: ${second}`
+        // }
+
+        // setinterval(clock,10000)
+    </script>
+    
+</body>
+</html>
