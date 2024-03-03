@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+    <script>
+        //javascript has single threaded model of the execution
+
+        //
+        //
+        //
+        //
+        // code to be executed after the data has been fetched  from the server
+
+        // there are  three major way to achieve asynchronous  programming in javscript
+        //1.callback function
+        //2. promises
+        //3. async/ await
+
+        let news=[
+            {newtitle:'first title',content:'this is the first content'},
+            {newtitle:'second title',content:'this is the second content'},
+
+            {newtitle:'third title',content:'this is the third content'},
+
+
+
+            
+
+        ]
+
+        const shownews=() =>{
+            setTimeout(()=>{
+                let result=''
+                news.forEach(post =>{
+                    result+= `<li>${post.newtitle}</title>`
+                })
+
+                document.querySelector('div').innerHTML= result
+            }, 3000)
+
+
+        }
+
+        shownews
+        const addnews=(newsdate)=>{
+            setTimeout(()=>{
+                news.push(newsdate)
+                console.log(news)
+            },5000)
+        }
+
+        addnews({newstitle:'forth title',content:'this is the forth content'})
+    </script>
+    
+</body>
+</html>
