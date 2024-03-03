@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>couhnter</title>
+</head>
+<body>
+
+    <button id="sub-count">-</button>
+    <h2 id="view-count">0</h2>
+    <button id="add-btn">+</button>
+
+    <script>
+        const subbtn=document.getElementById('sub-btn')
+        const addbtn=document.getElementById('add-btn')
+        const viewcount=document.getElementById('view-count')
+
+        let count=0
+        addbtn.addEventListener('click',()=>{
+            count++
+            viewcount.textContent=count
+        })
+
+        subbtn.addEventListener('click',()=>{
+            count--
+            viewcount.textContent=count
+        })
+
+        resetbtn.addEventListener('click',()=>{
+            count=0
+            viewcount.textContent= 0
+        })
+
+    
+
+
+
+    </script>
+    
+</body>
+</html>

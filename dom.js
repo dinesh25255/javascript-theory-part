@@ -125,4 +125,52 @@ mainheading.addEventListener('click',()=>{
 
 
 
+const lists =document.querySelectorAll('.fruit')
+
+// for each method - it is a metod  the iterates over the iteratb.
+
+lists.forEach(e =>{
+    e.addEventListener('click',()=>{
+        let uppercasedate=data.touppercase()
+        e.textContent=uppercasedate
+
+    })
+  
+})
+
+//event - an event is an action that takes place in a webpages
+
+
+
+// to handle event  dom has a method called addevent listener  which can be  attached to  any  dom  nodes/element to listen the event and provide some functionality based  on the event
+
+
+// to handle event  we  can use inline event handlers as well these are basically written with html tags as an attritubes
+
+let originaltext= mainheading.textContent 
+mainheading.addEventListener('mouseover',()=>{
+    let date =mainheading.textContent
+    let uppercasedate=date.toLowerCase()
+    mainheading.textContent=uppercasedate
+})
+
+
+
+mainheading.addEventListener('mouseout',()=>{
+    mainheading.textContent= originaltext
+
+})
+
+constlists =document.querySelectorAll('.fruit')
+console.log(lists)
+lists.forEach(e =>{
+    e.addEventListener('click',()=>{
+        let uppercasedate=data.touppercase()
+        e.textContent=uppercasedate
+
+    })
+  
+})
+
+
 
